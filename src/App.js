@@ -35,7 +35,7 @@ const App = () => {
   };
 
   return (
-    <div className="App">
+    <div className="App container mx-auto rounded-3xl mt-5 mb-16 h-screen">
       <form onSubmit={getSearch} className="search-form">
         <input
           className="search-bar"
@@ -50,10 +50,10 @@ const App = () => {
       </form>
 
       <div>
-        <h1 className="menu">Recipe Guide</h1>
+        <h1 className="menu text-2xl text-white">The Recipe Guide</h1>
       </div>
 
-      <div className="recipes">
+      {/* <div className="recipes">
         {recipes.map(recipe => (
           <Recipe
             key={recipe.recipe.calories}
@@ -63,7 +63,7 @@ const App = () => {
             ingredients={recipe.recipe.ingredients}
           />
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };
