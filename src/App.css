@@ -1,5 +1,14 @@
  .App {
-  background: rgb(0, 201, 84)
+  background: rgb(0, 201, 84);
+  height: 95vh;
+}
+
+.height {
+  height: 95vh;
+}
+
+.center {
+  height: 45vh;
 }
 
 /*
