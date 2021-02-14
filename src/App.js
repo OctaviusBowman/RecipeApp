@@ -37,24 +37,23 @@ const App = () => {
 
   return (
     <div className="App my-3 flex flex-col justify-between mx-auto w-11/12 rounded-3xl shadow-lg">
-      {/* <div className="App my-3 container-None mx-auto w-11/12 rounded-3xl"> */}
 
-      <h1 className="menu text-2xl text-white pl-16 pt-10 tracking-wide font-bold">The Recipe Guide
-        <img className="inline w-8 ml-5" src={Logo} alt=""/>
+      <h1 className="menu text-2xl text-white pl-16 pt-10 tracking-wide font-bold 1080p:text-3xl macOld:text-5xl macOld:pl-20 macOld:pt-14 4k:text-7xl 4k:pl-32 4k:pt-20">The Recipe Guide
+        <img className="inline w-8 ml-5 macOld:w-12 4k:w-20 4k:ml-7" src={Logo} alt="Crossed Knives"/>
       </h1>
 
       <div className="searchWrapper flex flex-col self-center pb-32">
-        <h1 className="font-bold text-white text-6xl">What do you have a taste for?</h1>
+        <h1 className="font-bold text-white text-6xl 1080p:text-7xl macOld:text-8xl 4k:text-9xl">What do you have a taste for?</h1>
 
-        <form onSubmit={getSearch} className="search-form flex pt-8 justify-center">
+        <form onSubmit={getSearch} className="search-form flex pt-8 macOld:pt-12 justify-center">
           <input
-            className="search-bar w-9/12 py-1 pl-6 rounded focus:outline-none text-gray-500 font-semibold text-2xl placeholder-gray-500"
+            className="search-bar w-9/12 py-1 pl-6 rounded focus:outline-none text-gray-500 font-semibold text-2xl 1080p:text-3xl macOld:text-5xl 4k:text-7xl placeholder-gray-500"
             placeholder="We'll find a recipe for you!"
             type="text"
             value={search}
             onChange={updateSearch}
           />
-          <button className="search-button rounded text-white px-3 font ml-4 text-2xl font-semibold bg-blue-500 hover:bg-blue-600 outline-none" type="submit">
+          <button className="search-button rounded text-white px-3 font ml-4 text-2xl 1080p:text-3xl macOld:text-5xl 4k:text-7xl font-semibold bg-blue-500 hover:bg-blue-600 outline-none" type="submit">
             Search
         </button>
         </form>
@@ -62,6 +61,8 @@ const App = () => {
       </div>
 
       <div className="flexClearFix"></div>
+
+    {/* TODO: style cards, maybe implementing the flexClearFix class with negative margin or overflow hidden */}
 
       {/* <div className="recipes">
         {recipes.map(recipe => (
