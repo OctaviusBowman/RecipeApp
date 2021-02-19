@@ -7,7 +7,8 @@ module.exports = {
         body: ['Varela Round']
       },
       colors: {
-        gray: { 1000: "#333333" }
+        gray: { 1000: "#333333" },
+        green: { 1000: "#00c954"}
       },
       screens: {
         '1080p': '1919px',

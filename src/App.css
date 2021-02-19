@@ -11,6 +11,10 @@
   height: 45vh;
 }
 
+.width {
+  width: 27vw;
+}
+
 /*
 .search-form {
   min-height: 10vh;
