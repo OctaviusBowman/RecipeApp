@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Recipe from "./components/Recipe";
 import "./App.css";
 import Logo from "./TheKnife.svg"
+import Arrow from "./TheArrow.svg"
 
 const App = () => {
   // I know storing values here is bad practice. I could store these values in a .env file, but I chose not to for simplicity. The chances of anyone reading this is pretty low, however if you do have fun :)
@@ -55,7 +56,7 @@ const App = () => {
               value={search}
               onChange={updateSearch}
             />
-            <button className="search-button rounded text-white px-3 font ml-4 text-2xl 1080p:text-3xl macOld:text-5xl 4k:text-7xl font-semibold bg-blue-500 hover:bg-blue-600 outline-none" type="submit">
+            <button className="search-button focus:outline-none rounded text-white px-3 font ml-4 text-2xl 1080p:text-3xl macOld:text-5xl 4k:text-7xl font-semibold bg-blue-500 hover:bg-blue-600 outline-none" type="submit">
               Search
         </button>
           </form>
@@ -68,10 +69,10 @@ const App = () => {
     // Store these return values in the 
 
     return (
-      <div className="bg-green-1000">
-        <div className="bg-white w-11/12 mx-auto rounded-3xl shadow">
-          <h1 className="text-green-1000 font-bold text-center text-6xl">Recipes</h1>
-          <div className="px-32 grid grid-cols-3 gap-48 pt-6">
+      <div className="bg-green-1000 py-3">
+        <div className="bg-white w-11/12 mx-auto rounded-3xl shadow pt-2">
+          <h1 className="text-green-1000 font-bold text-center text-6xl 1080p:text-7xl macOld:text-8xl 4k:text-9xl">Recipes</h1>
+          <div className="px-32 grid grid-cols-3 gap-48 1080p:gap-16 1080p:px-48 py-5">
             {recipes.map(recipe => (
               <Recipe
                 key={recipe.recipe.calories}
@@ -82,12 +83,12 @@ const App = () => {
               />
             ))}
           </div>
+        <button className="bg-green-1000 hover:bg-gray-500 focus:outline-none macOld:text-4xl macNew:text-5xl text-white text-2xl 1080p:text-3xl fixed 1080p:bottom-4 macOld:bottom-8 bottom-2 left-1 rounded-lg 4k:p-3 p-1.5" onClick={getSearch}>
+          <img className="inline w-9 1080p:w-10 mr-2 macOld:w-12 macNew:w-14" src={Arrow} alt="Back Arrow"/>
+          Search</button>
         </div>
       </div>)
   };
-
-
-
 };
 
 export default App;

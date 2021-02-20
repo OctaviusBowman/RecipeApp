@@ -1,21 +1,41 @@
  .App {
-  background: rgb(0, 201, 84);
-  height: 95vh;
+   background: rgb(0, 201, 84);
+   height: 95vh;
+ }
+
+ .height {
+   height: 95vh;
+ }
+
+ .center {
+   height: 45vh;
+ }
+
+ .width {
+   width: 27vw;
+ }
+
+ /* width */
+::-webkit-scrollbar {
+  width: 12px;
 }
 
-.height {
-  height: 95vh;
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff;
 }
 
-.center {
-  height: 45vh;
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 1rem;
 }
 
-.width {
-  width: 27vw;
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
-
-/*
+ /*
 .search-form {
   min-height: 10vh;
   display: flex;
